@@ -1,0 +1,74 @@
+html {
+    user-select: none;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: grey;
+    min-height: 100vh;
+}
+
+.campos{
+    display: grid;
+    place-items: center;
+}
+
+.filas{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.filas > div{
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 28px;
+    color: black;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.respuesta{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control{
+    text-align: center;
+}
+
+.palabra{
+    margin: 6px;
+    height: 50px;
+    width: 50px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.btn{
+    padding: 10px 100px 10px 100px;
+    background-color: black;
+    border-color: black;
+    margin-top: 30px;
+}
+
+/*
+.campo{
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 28px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}*/
