@@ -94,7 +94,7 @@ function App() {
 
     }
 
-    
+    formulario.reset();
   };
 
   function wirteLetters(lettersToUpdate) {
@@ -140,7 +140,7 @@ function App() {
 
   return (
     <div className='campos'>
-      <form onSubmit={send}>
+      <form id='formulario' onSubmit={send}>
         <input minLength={5} maxLength={5} className='form-control' onChange={changes} />
       </form>
 
