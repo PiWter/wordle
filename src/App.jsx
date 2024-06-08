@@ -52,7 +52,6 @@ function App() {
   useEffect(() => {
     const randomNumber = Math.floor(Math.random() * 46);
     setRandomWord(wordsList[randomNumber])
-    console.log(randomWord)
   }, [wordsList])
 
   const changes = (ev) => {
@@ -117,18 +116,20 @@ function App() {
         [`letter${place}`]: value
       }));
     };
-    
-    console.log(randomWord)
 
     var placeC = 0
 
-    for (var c of word) {
-      var placeA = 0 
-      placeC += 1
-      for(var a of randomWord) {
-        placeA += 1
-        if (c == a & placeC == placeA) {  
-          setLetterAtPlace(placeA, a)
+
+    if (!word){
+      console.log(word)
+      for (var c of word) {
+        var placeA = 0 
+        placeC += 1
+        for(var a of randomWord) {
+          placeA += 1
+          if (c == a & placeC == placeA) {  
+            setLetterAtPlace(placeA, a)
+          }
         }
       }
     }

@@ -5,8 +5,12 @@ html {
 body{
     display: grid;
     place-items: center;
-    background-color: grey;
     min-height: 100vh;
+    /*background-image: url(/src/assets/fondo-ruido3.png);*/
+    --bs-body-bg: #111417;
+    --bs-body-color: #fff;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
 }
 
 .campos{
@@ -25,13 +29,16 @@ body{
     place-items: center;
     height: 50px;
     width: 50px;
-    border: 2px solid rgb(174, 174, 174);
+    border: 2px solid rgb(181, 181, 181);
     border-radius: 15px;
     margin: 5px;
     font-size: 28px;
-    color: black;
-    background-color: white;
+    background-image: url(/src/assets/fondo-ruido.png);
     font-family: 'Courier New', Courier, monospace;
+}
+
+.form-control{
+    margin-bottom: 60px;
 }
 
 .respuesta{
@@ -52,23 +59,11 @@ body{
     font-size: 28px;
 }
 
+
 .btn{
     padding: 10px 100px 10px 100px;
-    background-color: black;
+    --bs-btn-bg: black;
+    background-color: var(--bs-btn-bg);
     border-color: black;
     margin-top: 30px;
 }
-
-/*
-.campo{
-    display: grid;
-    place-items: center;
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    border-radius: 15px;
-    margin: 5px;
-    font-size: 28px;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-}*/
