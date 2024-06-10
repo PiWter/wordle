@@ -59,11 +59,12 @@ body{
     font-size: 28px;
 }
 
-
-.btn{
+.btn-primary{
     padding: 10px 100px 10px 100px;
     --bs-btn-bg: black;
-    background-color: var(--bs-btn-bg);
-    border-color: black;
+    background-color: black;
+    /*border-color: black;*/
+    border-radius: 50px;
     margin-top: 30px;
+    color: white;
 }

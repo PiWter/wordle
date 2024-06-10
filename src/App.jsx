@@ -120,16 +120,14 @@ function App() {
     var placeC = 0
 
 
-    if (!word){
-      console.log(word)
-      for (var c of word) {
-        var placeA = 0 
-        placeC += 1
-        for(var a of randomWord) {
-          placeA += 1
-          if (c == a & placeC == placeA) {  
-            setLetterAtPlace(placeA, a)
-          }
+    console.log(word)
+    for (var c of word) {
+      var placeA = 0 
+      placeC += 1
+      for(var a of randomWord) {
+        placeA += 1
+        if (c == a & placeC == placeA) {  
+          setLetterAtPlace(placeA, a)
         }
       }
     }
@@ -164,7 +162,7 @@ function App() {
       </div>
 
       <p>{playerState}</p>
-      <button onClick={reload} className='btn btn-primary'>Reiniciar</button>
+      <button onClick={reload} className='btn-primary'>Reiniciar</button>
     </div>
   );
 }
